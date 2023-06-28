@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Develop\DevelopFrame\apache-maven-3.8.3\repository" />
+        <option name="mavenHome" value="D:/Develop/DevelopFrame/apache-maven-3.8.3" />
+        <option name="userSettingsFile" value="D:\Develop\DevelopFrame\apache-maven-3.8.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop&quot;
+  }
+}</component>
+</project>

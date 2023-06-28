@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>猫眼电影中心</title>
+  <!-- CSS -->
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">猫眼电影中心</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list.html">影片</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="actor.html">演员</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">新闻</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="report.html">报告</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <blockquote class="blockquote">
+    
+  
+    <div style="width: 46%;margin: 40px auto;font-size: 1.4em;">
+       
+<h3 style="margin: 0 auto;text-align: center;">Web应用基础课程报告</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;本次课程中，我们使用通过Bootstrap搭建了一个电影门户网站。我们使用Bootstrap框架，结合HTML和CSS，开发了一个电影浏览网站，实现了以下功能：
+  首页展示：网站的首页展示了最新上映的电影，以及展示了比较热门的电影
+  电影详情页：用户可以点击电影图片或标题，进入到电影详情页，查看电影的详情介绍、演员表，电影时长，电影分类以及上映时间。
+  演员列表： 用户可以在当前页面查看到常见的演员列表，其中展示了演员的相关信息包括国籍,性别，出生日期，代表作以及个人简介
+  新闻浏览功能：用户可以浏览近期影视圈发生的新闻，包括拍摄进度，电影的感想等。
+  报告查看功能:将本次开发的过程总结成一份报告展示到网站中</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;开发过程
+  我们使用Bootstrap框架结合HTML和CSS实现了网站的布局和样式，使用JavaScript实现前端交互效果和页面特效。
+  首先对整个电影浏览网站划分模块，确定了6个页面包括首页，电影列表，电影详情，演员列表，新闻浏览页面以及最后的报告页面。确定完成后，选择整体样式，将页面分为header，footer以及内容部分的content。然后对每个页面的内容设置布局和样式，使用Bootstrap网格系统和组件，制作了网站的导航栏、和电影列表。接着，我们实现了电影详情页，显示电影的详情介绍、演员表和预告片，通过卡片布局展示电影列表。然后，我们实现了新闻展示，通过在猫眼查看将新闻复制填充到编辑好的卡片布局中，点击浏览更多能够进入电影新闻的正文界面。
+  最后，我们实现了报告查看功能，将报告写好后放到一个菜单中展示。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;遇到的问题以及如何解决
+
+  问题1：如何获得网站所需要的数据？
+  解决方案：通过爬取其他网站的信息比如猫眼，通过Python的爬虫技术或者xpath表达式直接在网页中获得标签元素。
+  问题2：如何使用bootstrap进行电影列表的布局？
+  解决方案：通过bootstrap提供的ul样式，类名为navbar-nav ms-auto以及li的样式nav-item将布局设置为卡片布局，一个卡片代表着一个电影，其中包含了电影的基本信息还有一个电影详情的按钮，点击可查看电影详情。
+  问题3： 如何通过代码托管网站部署静态网页？
+  解决方案：提供代码托管的网站较多，比如github，gitlab以及gitee，其中gitee使用较为简单，本地编码完成后在gitee创建一个空项目，将本地文件关联到远端gitee项目后，直接提交上传代码，最后选择gitee提供的gitee page服务即可部署静态页面。
+  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;未解决的问题
+  我们的网站目前没有实现电影的在线播放功能，这是我们未来需要努力解决的问题之一。如果需要实现可以接入第三方播放器，其中bootstrap提供了Dplayer视频播放插件，使用简单兼容性较好
+  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;总结
+  通过本次web应用基础课程的学习，我深刻认识到了Web应用的重要性和开发的难度。在学习过程中，我不仅掌握了HTML、CSS、JavaScript等前端技术，还能够通过代码托管网站进行网站部署，尽管是静态的网站，但仍具有一定的学习意义，我以此了解到了运维方面的知识比如CI/CD持续集成/持续部署（Continuous Integration/Continuous Deployment）CI/CD的主要优点包括加快软件交付速度、降低交付风险、缩短开发周期、提高接口的稳定性等。这种流程的建立不仅可以轻松管理和掌控开发流程，也能够提高软件开发团队的整体效率和质量。通过设置git的钩子，当相应事件发生时会触发集成部署与集成发布。总之，本课程为我提供了一次难得的学习机会，我相信所掌握的知识和技巧会在未来的学习和工作中发挥重要作用。</p>
+
+    </div>
+  </blockquote>
+
+  <footer class="bg-dark text-white text-center p-3" style="margin-top: 37vh;"> 
+    版权所有 &copy; 2023 电影主题网站
+  </footer>
+  <style>
+    li{
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
